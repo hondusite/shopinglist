@@ -1,7 +1,7 @@
 {
     "name": "Shopping List",
     "short_name": "ShopList",
-    "start_url": "/index.html",
+    "start_url": "https://hondusite.github.io/shopinglist/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#4caf50",
