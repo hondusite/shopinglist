@@ -1,0 +1,83 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+#formulario-producto {
+    display: flex;
+    margin-bottom: 20px;
+}
+#nuevo-producto, #cantidad-producto {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+#cantidad-producto {
+    width: 80px;
+    border-radius: 0;
+    border-left: none;
+}
+#formulario-producto button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#formulario-producto button:hover {
+    background-color: #45a049;
+}
+#lista-productos {
+    list-style-type: none;
+    padding: 0;
+}
+.producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.producto.comprado {
+    opacity: 0.6;
+}
+.producto.comprado .nombre-producto {
+    text-decoration: line-through;
+}
+.nombre-producto {
+    font-size: 18px;
+    flex-grow: 1;
+}
+.cantidad-producto {
+    font-weight: bold;
+    margin-right: 15px;
+    color: #666;
+}
+.acciones button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+.acciones button:hover {
+    color: #4CAF50;
+}
+.acciones .eliminar:hover {
+    color: #f44336;
+}
